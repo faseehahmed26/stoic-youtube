@@ -1,0 +1,72 @@
+.stoic-youtube-hidden,
+[data-stoic-youtube-hidden="true"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+html.stoic-youtube-active ytd-reel-shelf-renderer,
+html.stoic-youtube-active ytm-reel-shelf-renderer {
+  display: none !important;
+}
+
+#stoic-youtube-home-placeholder {
+  align-items: center;
+  box-sizing: border-box;
+  color: var(--yt-spec-text-secondary, #606060);
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, Arial, sans-serif;
+  gap: 10px;
+  left: 50%;
+  line-height: 1.4;
+  margin: 0;
+  max-width: 560px;
+  pointer-events: none;
+  padding: 24px;
+  position: fixed;
+  text-align: center;
+  top: 34vh;
+  transform: translateX(-50%);
+  width: min(560px, calc(100vw - 48px));
+  z-index: 1000;
+}
+
+#stoic-youtube-home-placeholder strong {
+  color: var(--yt-spec-text-primary, #f1f1f1);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+#stoic-youtube-home-placeholder span {
+  font-size: 16px;
+}
+
+html.stoic-youtube-blank-home ytd-browse[page-subtype="home"] ytd-rich-grid-renderer,
+html.stoic-youtube-blank-home ytd-browse[page-subtype="home"] ytd-rich-section-renderer,
+html.stoic-youtube-blank-home ytd-browse[page-subtype="home"] ytd-reel-shelf-renderer,
+html.stoic-youtube-blank-home ytd-browse ytd-rich-grid-renderer,
+html.stoic-youtube-blank-home ytm-browse ytm-rich-grid-renderer,
+html.stoic-youtube-blank-home ytm-browse ytm-item-section-renderer,
+html.stoic-youtube-blank-home ytm-browse ytm-reel-shelf-renderer {
+  display: none !important;
+}
+
+html.stoic-youtube-active ytd-rich-section-renderer:has(a[href^="/shorts/"]),
+html.stoic-youtube-active ytd-rich-section-renderer:has(a[href*="youtube.com/shorts/"]),
+html.stoic-youtube-active ytd-rich-item-renderer:has(a[href^="/shorts/"]),
+html.stoic-youtube-active ytd-rich-item-renderer:has(a[href*="youtube.com/shorts/"]),
+html.stoic-youtube-active ytd-video-renderer:has(a[href^="/shorts/"]),
+html.stoic-youtube-active ytd-video-renderer:has(a[href*="youtube.com/shorts/"]),
+html.stoic-youtube-active ytd-grid-video-renderer:has(a[href^="/shorts/"]),
+html.stoic-youtube-active ytd-grid-video-renderer:has(a[href*="youtube.com/shorts/"]),
+html.stoic-youtube-active ytd-compact-video-renderer:has(a[href^="/shorts/"]),
+html.stoic-youtube-active ytd-compact-video-renderer:has(a[href*="youtube.com/shorts/"]),
+html.stoic-youtube-active yt-lockup-view-model:has(a[href^="/shorts/"]),
+html.stoic-youtube-active yt-lockup-view-model:has(a[href*="youtube.com/shorts/"]),
+html.stoic-youtube-active ytm-rich-item-renderer:has(a[href^="/shorts/"]),
+html.stoic-youtube-active ytm-rich-item-renderer:has(a[href*="youtube.com/shorts/"]),
+html.stoic-youtube-active ytm-video-with-context-renderer:has(a[href^="/shorts/"]),
+html.stoic-youtube-active ytm-video-with-context-renderer:has(a[href*="youtube.com/shorts/"]) {
+  display: none !important;
+}
